@@ -25,6 +25,6 @@ variable "org" {
 }
   
 variable "space" {
-  default = "dev"
+  default = "trial_space"
 }
 
