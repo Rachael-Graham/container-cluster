@@ -37,3 +37,12 @@ variable "isolation" {
 variable "private_vlan_id" {}
 variable "public_vlan_id" {}
 variable "subnet_id" {}
+
+variable "workers" {
+  type = "list",
+  default = [
+    [],
+    [ {name = "worker-1"} ],
+    ]
+}
+variable "num_workers" { default = 1 }
