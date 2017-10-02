@@ -20,7 +20,10 @@ resource "random_id" "name" {
 }
 
 variable "bluemix_api_key" {}
-variable "org" {}
+variable "org" {
+   default = "rachael.graham@ibm.com"
+}
+  
 variable "space" {
   default = "dev"
 }
